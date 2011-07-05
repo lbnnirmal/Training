@@ -11,7 +11,7 @@
 development:
   adapter: postgresql
   encoding: utf-8
-  database: TrainerAllocationDB
+  database: DB
   pool: 5
   username: postgres
   password: fitifs06d_
@@ -37,7 +37,7 @@ development:
 test:
   adapter: postgresql
   encoding: utf-8
-  database: TrainerAllocationDB
+  database: DB
   pool: 5
   username: postgres
   password: fitifs06d_
@@ -45,7 +45,7 @@ test:
 production:
   adapter: postgresql
   encoding: utf-8
-  database: TrainerAllocationDB
+  database: DB
   pool: 5
   username: postgres
   password: fitifs06d_
