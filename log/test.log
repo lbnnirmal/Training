@@ -474,3 +474,23 @@ Rendered layouts/_header (0.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/]
   [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "updated_at", "email") VALUES('Example User', '2011-07-05 09:51:33.876715', '2011-07-05 09:51:33.876715', 'user@example.com') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "created_at", "updated_at", "email") VALUES('Example User', '2011-07-05 09:51:52.923712', '2011-07-05 09:51:52.923712', 'user@example.com') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
