@@ -1437,3 +1437,1788 @@ Rendered layouts/_stylesheets (15.6ms)
 Rendered layouts/_header (31.2ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 14:50:44) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '088351a663ebd3cf72853c326440dbc90bfb06762253a8459070440910144c01') LIMIT 1[0m
+Rendered layouts/_header (218.8ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 313ms (View: 297, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-07-07 14:50:47) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 14:50:47) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-07-07 14:50:51) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/signin]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-07-07 14:51:07) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"lbnnirmal@hotmail.com"}, "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'lbnnirmal@hotmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-07-07 09:21:07.177934', "remember_token" = '7464e87def27160ba45fc48fd2dd7c80c1f09ad9abeafa669c428123e13e0088' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/users/4
+Completed in 172ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-07-07 14:51:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '7464e87def27160ba45fc48fd2dd7c80c1f09ad9abeafa669c428123e13e0088') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/users/4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-07-07 14:51:10) [GET]
+  Parameters: {"action"=>"show", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 4) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (15.6ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '7464e87def27160ba45fc48fd2dd7c80c1f09ad9abeafa669c428123e13e0088') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 234ms (View: 31, DB: 0) | 200 OK [http://localhost/users/4]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 14:51:11) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '7464e87def27160ba45fc48fd2dd7c80c1f09ad9abeafa669c428123e13e0088') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-07-07 14:51:14) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '7464e87def27160ba45fc48fd2dd7c80c1f09ad9abeafa669c428123e13e0088') LIMIT 1[0m
+Rendered layouts/_header (62.5ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 78, DB: 0) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2011-07-07 14:51:16) [DELETE]
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+Redirected to http://localhost:3000/
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/signout]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 14:51:16) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 14:51:21) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#help (for 127.0.0.1 at 2011-07-07 14:51:24) [GET]
+  Parameters: {"action"=>"help", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/help]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: database "DB" is being accessed by other users
+DETAIL: There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "DB"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (78.1ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (218.8ms)[0m   [0mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp, "encrypted_password" character varying(255), "salt" character varying(255), "remember_token" character varying(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Example User', '0ef3085a92602190261887fce1bb7d7479078f957b0199279a71d7d7ca54645d', 'cf93ba38bf7db7b9f962d524949a60116368b9d74141265305419f3721bda674', '2011-07-07 09:46:21.125123', '2011-07-07 09:46:21.125123', NULL, 'example@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-1@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mrs. Kelli Collins', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.171998', '2011-07-07 09:46:21.171998', NULL, 'example-1@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-2@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Josue Feeney', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.187623', '2011-07-07 09:46:21.187623', NULL, 'example-2@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-3@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Niko Gusikowski', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.218873', '2011-07-07 09:46:21.218873', NULL, 'example-3@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-4@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Arielle Keebler', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.218873', '2011-07-07 09:46:21.218873', NULL, 'example-4@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-5@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Dr. Emmanuel Glover', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.312624', '2011-07-07 09:46:21.312624', NULL, 'example-5@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-6@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Alyson Armstrong', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.328249', '2011-07-07 09:46:21.328249', NULL, 'example-6@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-7@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Hertha Effertz', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.328249', '2011-07-07 09:46:21.328249', NULL, 'example-7@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-8@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jadon Stamm', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.343874', '2011-07-07 09:46:21.343874', NULL, 'example-8@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-9@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Linwood Gusikowski', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.359499', '2011-07-07 09:46:21.359499', NULL, 'example-9@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-10@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mitchel Bailey', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.375124', '2011-07-07 09:46:21.375124', NULL, 'example-10@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-11@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Abbie Greenholt IV', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.390750', '2011-07-07 09:46:21.390750', NULL, 'example-11@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-12@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mrs. Ryann Bernier', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.406375', '2011-07-07 09:46:21.406375', NULL, 'example-12@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-13@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Bethel Brakus', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.422000', '2011-07-07 09:46:21.422000', NULL, 'example-13@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-14@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Vicenta Frami Jr.', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.437625', '2011-07-07 09:46:21.437625', NULL, 'example-14@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-15@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Marcelina Deckow', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.437625', '2011-07-07 09:46:21.437625', NULL, 'example-15@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-16@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Rebeka Corkery Jr.', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.453250', '2011-07-07 09:46:21.453250', NULL, 'example-16@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-17@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Arlene Jones', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.468875', '2011-07-07 09:46:21.468875', NULL, 'example-17@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-18@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Clemmie Schulist', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.484500', '2011-07-07 09:46:21.484500', NULL, 'example-18@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-19@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Joany O''Conner', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.484500', '2011-07-07 09:46:21.484500', NULL, 'example-19@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-20@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Taurean Denesik', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.500125', '2011-07-07 09:46:21.500125', NULL, 'example-20@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-21@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Randi Spencer I', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.515750', '2011-07-07 09:46:21.515750', NULL, 'example-21@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-22@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Otto Pouros', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.531375', '2011-07-07 09:46:21.531375', NULL, 'example-22@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-23@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jevon Mayert', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.547001', '2011-07-07 09:46:21.547001', NULL, 'example-23@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-24@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Devante Renner', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.562626', '2011-07-07 09:46:21.562626', NULL, 'example-24@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-25@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Greyson Grant', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.562626', '2011-07-07 09:46:21.562626', NULL, 'example-25@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-26@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jayden Barton', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.578251', '2011-07-07 09:46:21.578251', NULL, 'example-26@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-27@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Sylvia Stroman', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.593876', '2011-07-07 09:46:21.593876', NULL, 'example-27@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-28@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Stuart Shanahan', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.609501', '2011-07-07 09:46:21.609501', NULL, 'example-28@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-29@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Margret Larson', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.609501', '2011-07-07 09:46:21.609501', NULL, 'example-29@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-30@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Braxton Jaskolski', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.625126', '2011-07-07 09:46:21.625126', NULL, 'example-30@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-31@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Estefania Johnson', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.640751', '2011-07-07 09:46:21.640751', NULL, 'example-31@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-32@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Kenyon Reynolds MD', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.656376', '2011-07-07 09:46:21.656376', NULL, 'example-32@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-33@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Granville Hoppe', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.672001', '2011-07-07 09:46:21.672001', NULL, 'example-33@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-34@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Vivien Labadie II', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.687626', '2011-07-07 09:46:21.687626', NULL, 'example-34@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-35@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Viviane Jerde', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.703252', '2011-07-07 09:46:21.703252', NULL, 'example-35@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-36@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Immanuel Koss', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.703252', '2011-07-07 09:46:21.703252', NULL, 'example-36@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-37@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Liliane Thiel', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.718877', '2011-07-07 09:46:21.718877', NULL, 'example-37@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-38@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Ebba Lindgren', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.734502', '2011-07-07 09:46:21.734502', NULL, 'example-38@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-39@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mrs. Judge Boyer', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.734502', '2011-07-07 09:46:21.734502', NULL, 'example-39@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-40@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Carleton Ullrich', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.750127', '2011-07-07 09:46:21.750127', NULL, 'example-40@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-41@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Austin Klocko', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.765752', '2011-07-07 09:46:21.765752', NULL, 'example-41@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-42@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Zander Monahan', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.765752', '2011-07-07 09:46:21.765752', NULL, 'example-42@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-43@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Haleigh Roberts', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.781377', '2011-07-07 09:46:21.781377', NULL, 'example-43@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-44@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Bonita Abernathy', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.797002', '2011-07-07 09:46:21.797002', NULL, 'example-44@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-45@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Daniela Wolff', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.812627', '2011-07-07 09:46:21.812627', NULL, 'example-45@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-46@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Terrence Weimann', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.812627', '2011-07-07 09:46:21.812627', NULL, 'example-46@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-47@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Stacey Stanton', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.828252', '2011-07-07 09:46:21.828252', NULL, 'example-47@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-48@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Abe Howe', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.843877', '2011-07-07 09:46:21.843877', NULL, 'example-48@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-49@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Vesta Gutmann', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.859503', '2011-07-07 09:46:21.859503', NULL, 'example-49@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-50@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Ms. Bernita Koepp', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.859503', '2011-07-07 09:46:21.859503', NULL, 'example-50@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-51@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Gino Powlowski', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.875128', '2011-07-07 09:46:21.875128', NULL, 'example-51@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-52@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Stephany Bechtelar DVM', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.890753', '2011-07-07 09:46:21.890753', NULL, 'example-52@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-53@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Milan Harber', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.906378', '2011-07-07 09:46:21.906378', NULL, 'example-53@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-54@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Cindy King', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.922003', '2011-07-07 09:46:21.922003', NULL, 'example-54@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-55@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Casimer Smith', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.937628', '2011-07-07 09:46:21.937628', NULL, 'example-55@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-56@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Oscar Berge', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.937628', '2011-07-07 09:46:21.937628', NULL, 'example-56@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-57@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Athena Murazik', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.953253', '2011-07-07 09:46:21.953253', NULL, 'example-57@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-58@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jerad Hoppe', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.968878', '2011-07-07 09:46:21.968878', NULL, 'example-58@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-59@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Kraig Gleichner', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.984503', '2011-07-07 09:46:21.984503', NULL, 'example-59@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-60@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Adell Grant', '6b977274c935246a8c87073f721db1ba70f6fcb39a4730929c23ae19793e54e3', '289ffcc8924c02a702f6cc3b45c751a6cc734363f98193d70b0be0690518a7b1', '2011-07-07 09:46:21.984503', '2011-07-07 09:46:21.984503', NULL, 'example-60@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-61@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jaqueline Denesik', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.000128', '2011-07-07 09:46:22.000128', NULL, 'example-61@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-62@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Marjory Nolan', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.015754', '2011-07-07 09:46:22.015754', NULL, 'example-62@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-63@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Miss Bettye Oberbrunner', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.031379', '2011-07-07 09:46:22.031379', NULL, 'example-63@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-64@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Rossie Mante II', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.047004', '2011-07-07 09:46:22.047004', NULL, 'example-64@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-65@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Dayna Glover', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.062629', '2011-07-07 09:46:22.062629', NULL, 'example-65@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-66@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jaiden Ryan', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.062629', '2011-07-07 09:46:22.062629', NULL, 'example-66@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-67@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Rodrigo Kuhic', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.078254', '2011-07-07 09:46:22.078254', NULL, 'example-67@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-68@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Millie Bednar', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.093879', '2011-07-07 09:46:22.093879', NULL, 'example-68@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-69@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mr. Tanya Ebert', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.109504', '2011-07-07 09:46:22.109504', NULL, 'example-69@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-70@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Jordyn Murazik', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.109504', '2011-07-07 09:46:22.109504', NULL, 'example-70@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-71@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Pietro Kuhic', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.125129', '2011-07-07 09:46:22.125129', NULL, 'example-71@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-72@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Kody Dach', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.140754', '2011-07-07 09:46:22.140754', NULL, 'example-72@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-73@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Dana Hayes', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.156379', '2011-07-07 09:46:22.156379', NULL, 'example-73@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-74@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Tanner Wyman', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.172005', '2011-07-07 09:46:22.172005', NULL, 'example-74@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-75@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Maryse Cassin', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.187630', '2011-07-07 09:46:22.187630', NULL, 'example-75@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-76@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Kian Koss', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.187630', '2011-07-07 09:46:22.187630', NULL, 'example-76@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-77@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Maurine Lockman', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.203255', '2011-07-07 09:46:22.203255', NULL, 'example-77@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-78@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Kelly Thompson MD', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.218880', '2011-07-07 09:46:22.218880', NULL, 'example-78@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-79@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Elwyn Vandervort', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.359506', '2011-07-07 09:46:22.359506', NULL, 'example-79@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-80@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Desiree Kozey', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.359506', '2011-07-07 09:46:22.359506', NULL, 'example-80@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-81@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Ralph Wehner', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.375131', '2011-07-07 09:46:22.375131', NULL, 'example-81@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-82@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Marlen Trantow', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.390756', '2011-07-07 09:46:22.390756', NULL, 'example-82@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-83@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mrs. Jazmyne Orn', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.406381', '2011-07-07 09:46:22.406381', NULL, 'example-83@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-84@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Mayra Frami', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.406381', '2011-07-07 09:46:22.406381', NULL, 'example-84@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-85@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Christophe McLaughlin', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.422006', '2011-07-07 09:46:22.422006', NULL, 'example-85@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-86@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Tracey Cassin', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.437631', '2011-07-07 09:46:22.437631', NULL, 'example-86@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-87@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Adaline Gerhold', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.437631', '2011-07-07 09:46:22.437631', NULL, 'example-87@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-88@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Felicita Daniel', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.453256', '2011-07-07 09:46:22.453256', NULL, 'example-88@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-89@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Montana O''Keefe', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.468881', '2011-07-07 09:46:22.468881', NULL, 'example-89@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-90@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Coralie Ankunding', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.484507', '2011-07-07 09:46:22.484507', NULL, 'example-90@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-91@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Ava Aufderhar', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.484507', '2011-07-07 09:46:22.484507', NULL, 'example-91@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-92@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Hosea Runolfsdottir MD', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.500132', '2011-07-07 09:46:22.500132', NULL, 'example-92@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-93@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Favian Robel', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.515757', '2011-07-07 09:46:22.515757', NULL, 'example-93@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-94@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Bell DuBuque', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.531382', '2011-07-07 09:46:22.531382', NULL, 'example-94@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-95@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Forrest Murray', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.547007', '2011-07-07 09:46:22.547007', NULL, 'example-95@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-96@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Karen Christiansen', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.547007', '2011-07-07 09:46:22.547007', NULL, 'example-96@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-97@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Stanford Kozey', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.562632', '2011-07-07 09:46:22.562632', NULL, 'example-97@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-98@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Rosetta Kshlerin', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.578257', '2011-07-07 09:46:22.578257', NULL, 'example-98@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-99@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('Sibyl Beer', '51a560693397637e9e6e77033b440fe9cc6bd6c855139de7fb1402c4e4169161', 'f2cb1bdaaeb466ac31586cbc139a08864415b03aab6e8eefe57eec563a18ab39', '2011-07-07 09:46:22.578257', '2011-07-07 09:46:22.578257', NULL, 'example-99@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:16:55) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-07-07 15:16:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signin]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-07-07 15:17:34) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"lbnnirmal@hotmail.com"}, "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'lbnnirmal@hotmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 63ms (View: 16, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-07-07 15:17:55) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"lbnnirmal@hotmail.com"}, "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'lbnnirmal@hotmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/sessions]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:18:48) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2011-07-07 15:18:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2011-07-07 15:19:07) [POST]
+  Parameters: {"commit"=>"Sign up", "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"users", "user"=>{"name"=>"nirmal", "password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"lbnnirmal@gmail.com"}}
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'lbnnirmal@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "remember_token", "email") VALUES('nirmal', '494ab503fcb6cd5dfe951c1c70cf2b8a954d9cd20bcd5bff57e51fec35736b9a', '954ea64c0e1afaaa85fa5fc7046f642e96000e479721fa7fb37de50ca0bb2a38', '2011-07-07 09:49:07.719939', '2011-07-07 09:49:07.719939', NULL, 'lbnnirmal@gmail.com') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-07-07 09:49:07.751189', "remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4' WHERE "id" = 101[0m
+Redirected to http://localhost:3000/users/101
+Completed in 516ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-07-07 15:19:07) [GET]
+  Parameters: {"action"=>"show", "id"=>"101", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 101) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 188ms (View: 31, DB: 0) | 200 OK [http://localhost/users/101]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:19:11) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (62.5ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 234ms (View: 203, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-07-07 15:19:18) [GET]
+  Parameters: {"action"=>"show", "id"=>"101", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 101) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 31, DB: 0) | 200 OK [http://localhost/users/101]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2011-07-07 15:19:19) [GET]
+  Parameters: {"action"=>"edit", "id"=>"101", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 101) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/users/101/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:19:39) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (46.9ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 188ms (View: 188, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:23:28) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x4824be8>):
+  app/controllers/users_controller.rb:46:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.1ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:24:53) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (31.2ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:24:55) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x4587750>):
+  app/controllers/users_controller.rb:46:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (93.8ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:31:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 266ms (View: 203, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:31:59) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 30[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/users?page=2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:41:24) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"users"}
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 30[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 156ms (View: 109, DB: 31) | 200 OK [http://localhost/users?page=2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:41:27) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (31.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:41:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 109ms (View: 78, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:41:32) [GET]
+  Parameters: {"action"=>"index", "page"=>"2", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 30[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 141ms (View: 78, DB: 0) | 200 OK [http://localhost/users?page=2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:41:34) [GET]
+  Parameters: {"action"=>"index", "page"=>"4", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 90[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 156ms (View: 78, DB: 0) | 200 OK [http://localhost/users?page=4]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:41:39) [GET]
+  Parameters: {"action"=>"index", "page"=>"16", "controller"=>"users"}
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" LIMIT 30 OFFSET 450[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/users?page=16]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 15:41:44) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (15.6ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (31.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20110707033141)
+Migrating to AddEmailUniquenessIndex (20110707033828)
+Migrating to AddPasswordToUsers (20110707034005)
+Migrating to AddSaltToUsers (20110707034050)
+Migrating to AddRememberTokenToUsers (20110707084400)
+Migrating to AddAdminToUsers (20110707101312)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mALTER TABLE "users" ADD COLUMN "admin" boolean[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110707101312')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM "users" LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (15.6ms)[0m   [0mUPDATE "users" SET "updated_at" = '2011-07-07 10:14:35.464092', "admin" = 't' WHERE "id" = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: database "DB" is being accessed by other users
+DETAIL: There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "DB"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (109.4ms)[0m   [0mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp, "encrypted_password" character varying(255), "salt" character varying(255), "remember_token" character varying(255), "admin" boolean) [0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Example User', '8f00d4d64e57bdcb97ed2c73a1324c4ce635f773fc27dec673e06646f5388f51', 'ef95d365e3cdda3ef2d3e4d3a638646eacf6ded8a81cbe1a11f6ef8bc1c9b682', '2011-07-07 10:17:11.137382', '2011-07-07 10:17:11.137382', NULL, NULL, 'example@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-07-07 10:17:11.168634', "admin" = 't' WHERE "id" = 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:48:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 16ms (DB: 16) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-07-07 15:48:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'aa76416a62e68befaa7cca10350a3720fe77626bae258c2400b54eec167d80a4') LIMIT 1[0m
+Rendered layouts/_header (31.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 63ms (View: 63, DB: 0) | 200 OK [http://localhost/signin]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-07-07 15:49:41) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example@railstutorial.org"}, "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'example@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-07-07 10:19:41.816972', "remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/users
+Completed in 141ms (DB: 0) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:49:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (218.8ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 422ms (View: 313, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:49:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.6ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET search_path TO public[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: database "DB" is being accessed by other users
+DETAIL: There are 1 other session(s) using the database.
+: DROP DATABASE IF EXISTS "DB"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mDROP TABLE "users"[0m
+  [4;35;1mSQL (171.9ms)[0m   [0mCREATE TABLE "users" ("id" serial primary key, "name" character varying(255), "email" character varying(255), "created_at" timestamp, "updated_at" timestamp, "encrypted_password" character varying(255), "salt" character varying(255), "remember_token" character varying(255), "admin" boolean) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example@railstutorial.org') LIMIT 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Example User', '972e63e31d991ff1799276250ba88fed5c67c80469ad8808223d9d5ec3f003f7', '5570680231491a7a7a880ae70f9d8ca7e17f4ff615552412ea0707d496359714', '2011-07-07 10:21:21.306440', '2011-07-07 10:21:21.306440', NULL, NULL, 'example@railstutorial.org') RETURNING "id"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.0ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-07-07 10:21:21.353318', "admin" = 't' WHERE "id" = 1[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-1@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Joe Klocko', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.368943', '2011-07-07 10:21:21.368943', NULL, NULL, 'example-1@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-2@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Augusta Armstrong', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.384569', '2011-07-07 10:21:21.384569', NULL, NULL, 'example-2@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-3@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Aletha Goodwin', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.400195', '2011-07-07 10:21:21.400195', NULL, NULL, 'example-3@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-4@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Jan Blick', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.415821', '2011-07-07 10:21:21.415821', NULL, NULL, 'example-4@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-5@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Tressie Grimes', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.431447', '2011-07-07 10:21:21.431447', NULL, NULL, 'example-5@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-6@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Libbie Ryan', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.431447', '2011-07-07 10:21:21.431447', NULL, NULL, 'example-6@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-7@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Cicero McLaughlin', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.462698', '2011-07-07 10:21:21.462698', NULL, NULL, 'example-7@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-8@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Eliezer King', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.478324', '2011-07-07 10:21:21.478324', NULL, NULL, 'example-8@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-9@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Alexandro Schaefer', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.478324', '2011-07-07 10:21:21.478324', NULL, NULL, 'example-9@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-10@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Nickolas Watsica', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.493950', '2011-07-07 10:21:21.493950', NULL, NULL, 'example-10@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-11@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Nicolette Frami DVM', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.509576', '2011-07-07 10:21:21.509576', NULL, NULL, 'example-11@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-12@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Delaney Sanford', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.509576', '2011-07-07 10:21:21.509576', NULL, NULL, 'example-12@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-13@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Wayne Hand', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.525201', '2011-07-07 10:21:21.525201', NULL, NULL, 'example-13@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-14@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Raphaelle Green', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.540827', '2011-07-07 10:21:21.540827', NULL, NULL, 'example-14@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-15@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Marlene Huels', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.540827', '2011-07-07 10:21:21.540827', NULL, NULL, 'example-15@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-16@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Kristian Eichmann', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.556453', '2011-07-07 10:21:21.556453', NULL, NULL, 'example-16@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-17@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Laney O''Kon', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.572079', '2011-07-07 10:21:21.572079', NULL, NULL, 'example-17@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-18@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Hannah Wuckert', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.572079', '2011-07-07 10:21:21.572079', NULL, NULL, 'example-18@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-19@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Hattie Gusikowski', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.587705', '2011-07-07 10:21:21.587705', NULL, NULL, 'example-19@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-20@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Elsie Boyer', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.603330', '2011-07-07 10:21:21.603330', NULL, NULL, 'example-20@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-21@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Zachery Hilpert DDS', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.603330', '2011-07-07 10:21:21.603330', NULL, NULL, 'example-21@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-22@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Joseph Waters', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.618956', '2011-07-07 10:21:21.618956', NULL, NULL, 'example-22@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-23@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Lourdes Gulgowski', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.634582', '2011-07-07 10:21:21.634582', NULL, NULL, 'example-23@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-24@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Shanelle McGlynn', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.634582', '2011-07-07 10:21:21.634582', NULL, NULL, 'example-24@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-25@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mr. Garth Oberbrunner', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.650208', '2011-07-07 10:21:21.650208', NULL, NULL, 'example-25@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-26@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Eduardo Mertz', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.650208', '2011-07-07 10:21:21.650208', NULL, NULL, 'example-26@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-27@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Sidney West', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.665834', '2011-07-07 10:21:21.665834', NULL, NULL, 'example-27@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-28@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Berneice Sipes', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.681459', '2011-07-07 10:21:21.681459', NULL, NULL, 'example-28@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-29@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Leta Goodwin', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.681459', '2011-07-07 10:21:21.681459', NULL, NULL, 'example-29@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-30@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Miss Geovanni Rosenbaum', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.712711', '2011-07-07 10:21:21.712711', NULL, NULL, 'example-30@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-31@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Dr. Quinten Fisher', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.728337', '2011-07-07 10:21:21.728337', NULL, NULL, 'example-31@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-32@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Jacquelyn Howe', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.743963', '2011-07-07 10:21:21.743963', NULL, NULL, 'example-32@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-33@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ralph Roberts Sr.', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.759588', '2011-07-07 10:21:21.759588', NULL, NULL, 'example-33@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-34@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Abdul Ritchie', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.775214', '2011-07-07 10:21:21.775214', NULL, NULL, 'example-34@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-35@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Moshe Stamm', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.790840', '2011-07-07 10:21:21.790840', NULL, NULL, 'example-35@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-36@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Bette Mayert I', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.806466', '2011-07-07 10:21:21.806466', NULL, NULL, 'example-36@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-37@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Reymundo Upton', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.822092', '2011-07-07 10:21:21.822092', NULL, NULL, 'example-37@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-38@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ms. Paul Russel', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.837717', '2011-07-07 10:21:21.837717', NULL, NULL, 'example-38@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-39@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Haylie Hagenes', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.837717', '2011-07-07 10:21:21.837717', NULL, NULL, 'example-39@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-40@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Nayeli Brekke', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.853343', '2011-07-07 10:21:21.853343', NULL, NULL, 'example-40@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-41@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Nelda Denesik II', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.868969', '2011-07-07 10:21:21.868969', NULL, NULL, 'example-41@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-42@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Jerald Batz V', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.868969', '2011-07-07 10:21:21.868969', NULL, NULL, 'example-42@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-43@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Eriberto Goyette', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.884595', '2011-07-07 10:21:21.884595', NULL, NULL, 'example-43@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-44@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Willie Bailey', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.900221', '2011-07-07 10:21:21.900221', NULL, NULL, 'example-44@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-45@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Connie Wunsch', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.915846', '2011-07-07 10:21:21.915846', NULL, NULL, 'example-45@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-46@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Cassidy Kuphal', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.931472', '2011-07-07 10:21:21.931472', NULL, NULL, 'example-46@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-47@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mia Mills', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.947098', '2011-07-07 10:21:21.947098', NULL, NULL, 'example-47@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-48@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Elsa Dooley', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.947098', '2011-07-07 10:21:21.947098', NULL, NULL, 'example-48@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-49@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Marjolaine Botsford', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.962724', '2011-07-07 10:21:21.962724', NULL, NULL, 'example-49@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-50@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mattie Borer', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.978350', '2011-07-07 10:21:21.978350', NULL, NULL, 'example-50@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-51@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Allan Adams DVM', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.993975', '2011-07-07 10:21:21.993975', NULL, NULL, 'example-51@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-52@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mrs. Lori Keebler', '4c70df1e32153f31dc09d101f1dd22076d211f1233850215586b99567e8ef8dd', '41babbe9684fb5db932dad64cafc9d76f0791000cf0b96d9e89133bd6766da97', '2011-07-07 10:21:21.993975', '2011-07-07 10:21:21.993975', NULL, NULL, 'example-52@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-53@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ervin Toy', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.009601', '2011-07-07 10:21:22.009601', NULL, NULL, 'example-53@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-54@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Elsie Herman', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.025227', '2011-07-07 10:21:22.025227', NULL, NULL, 'example-54@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-55@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Gerard Smith', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.040853', '2011-07-07 10:21:22.040853', NULL, NULL, 'example-55@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-56@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Chadrick Schimmel', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.056479', '2011-07-07 10:21:22.056479', NULL, NULL, 'example-56@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-57@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Carlotta Lockman', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.072104', '2011-07-07 10:21:22.072104', NULL, NULL, 'example-57@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-58@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Delia Yost', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.072104', '2011-07-07 10:21:22.072104', NULL, NULL, 'example-58@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-59@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ms. Bertram Bogan', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.087730', '2011-07-07 10:21:22.087730', NULL, NULL, 'example-59@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-60@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Lourdes Kshlerin', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.103356', '2011-07-07 10:21:22.103356', NULL, NULL, 'example-60@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-61@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Kody Huels', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.118982', '2011-07-07 10:21:22.118982', NULL, NULL, 'example-61@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-62@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Winnifred Sipes', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.118982', '2011-07-07 10:21:22.118982', NULL, NULL, 'example-62@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-63@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mrs. Antonio Turner', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.134608', '2011-07-07 10:21:22.134608', NULL, NULL, 'example-63@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-64@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Gerson Schaefer', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.150233', '2011-07-07 10:21:22.150233', NULL, NULL, 'example-64@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-65@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Alisha Miller', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.165859', '2011-07-07 10:21:22.165859', NULL, NULL, 'example-65@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-66@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Elsie Wolff', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.181485', '2011-07-07 10:21:22.181485', NULL, NULL, 'example-66@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-67@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Melisa Wyman', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.197111', '2011-07-07 10:21:22.197111', NULL, NULL, 'example-67@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-68@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ahmad Schuster', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.197111', '2011-07-07 10:21:22.197111', NULL, NULL, 'example-68@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-69@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Lilla Mraz IV', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.212737', '2011-07-07 10:21:22.212737', NULL, NULL, 'example-69@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-70@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Camren Nader', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.228362', '2011-07-07 10:21:22.228362', NULL, NULL, 'example-70@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-71@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Claudia D''Amore', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.353369', '2011-07-07 10:21:22.353369', NULL, NULL, 'example-71@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-72@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Kianna Sipes', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.368995', '2011-07-07 10:21:22.368995', NULL, NULL, 'example-72@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-73@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Gillian Bruen DVM', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.368995', '2011-07-07 10:21:22.368995', NULL, NULL, 'example-73@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-74@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ebony Price', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.384620', '2011-07-07 10:21:22.384620', NULL, NULL, 'example-74@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-75@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Joany Gusikowski', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.384620', '2011-07-07 10:21:22.384620', NULL, NULL, 'example-75@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-76@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Kennith Renner', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.400246', '2011-07-07 10:21:22.400246', NULL, NULL, 'example-76@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-77@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Leonel Jewess', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.415872', '2011-07-07 10:21:22.415872', NULL, NULL, 'example-77@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-78@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Jaden Bartell', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.431498', '2011-07-07 10:21:22.431498', NULL, NULL, 'example-78@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-79@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Devon Block MD', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.447124', '2011-07-07 10:21:22.447124', NULL, NULL, 'example-79@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-80@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Dion Schuppe', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.447124', '2011-07-07 10:21:22.447124', NULL, NULL, 'example-80@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-81@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Wilfredo Strosin', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.462749', '2011-07-07 10:21:22.462749', NULL, NULL, 'example-81@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-82@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Cyrus Abshire', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.478375', '2011-07-07 10:21:22.478375', NULL, NULL, 'example-82@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (31.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-83@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Jeremy Lindgren', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.509627', '2011-07-07 10:21:22.509627', NULL, NULL, 'example-83@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-84@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Mr. Sydney Heidenreich', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.525253', '2011-07-07 10:21:22.525253', NULL, NULL, 'example-84@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-85@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Selina Crist', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.525253', '2011-07-07 10:21:22.525253', NULL, NULL, 'example-85@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-86@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ila Dach', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.540878', '2011-07-07 10:21:22.540878', NULL, NULL, 'example-86@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-87@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Kaela Erdman', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.556504', '2011-07-07 10:21:22.556504', NULL, NULL, 'example-87@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-88@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Alessia Metz', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.556504', '2011-07-07 10:21:22.556504', NULL, NULL, 'example-88@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-89@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Litzy Vandervort', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.572130', '2011-07-07 10:21:22.572130', NULL, NULL, 'example-89@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-90@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ferne VonRueden', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.587756', '2011-07-07 10:21:22.587756', NULL, NULL, 'example-90@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-91@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Alvis Hoeger', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.603382', '2011-07-07 10:21:22.603382', NULL, NULL, 'example-91@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-92@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Duane Rice', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.603382', '2011-07-07 10:21:22.603382', NULL, NULL, 'example-92@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-93@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Lucile Murray', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.619007', '2011-07-07 10:21:22.619007', NULL, NULL, 'example-93@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-94@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Ivory Runolfsdottir', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.634633', '2011-07-07 10:21:22.634633', NULL, NULL, 'example-94@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-95@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Neal Thompson', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.634633', '2011-07-07 10:21:22.634633', NULL, NULL, 'example-95@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-96@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Lora Yost', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.650259', '2011-07-07 10:21:22.650259', NULL, NULL, 'example-96@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-97@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Gilbert Ullrich', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.665885', '2011-07-07 10:21:22.665885', NULL, NULL, 'example-97@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-98@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Hobart Kirlin', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.665885', '2011-07-07 10:21:22.665885', NULL, NULL, 'example-98@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'example-99@railstutorial.org') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "encrypted_password", "salt", "created_at", "updated_at", "admin", "remember_token", "email") VALUES('Yasmin Hamill', '92904a188379bbf517eef22c046578324bbb38754a20db3a8bce8e64fce2e097', '3d0c1b8fe51d62e7e6c2f4a52259e519322cfbcb015bf3bd386b97447fb397cd', '2011-07-07 10:21:22.681511', '2011-07-07 10:21:22.681511', NULL, NULL, 'example-99@railstutorial.org') RETURNING "id"[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:51:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874') LIMIT 1[0m
+Redirected to http://localhost:3000/signin
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 31ms (DB: 0) | 302 Found [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2011-07-07 15:51:26) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (0.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '3edd4432a341b7e5597a3568cda98e6ae047154592f131a3dd642c0cae098874') LIMIT 1[0m
+Rendered layouts/_header (31.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/signin]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2011-07-07 15:51:34) [POST]
+  Parameters: {"commit"=>"Sign in", "session"=>{"password"=>"[FILTERED]", "email"=>"example@railstutorial.org"}, "action"=>"create", "authenticity_token"=>"rk7Nc6+fNmnD1KRTVn7eJ/mjK1WPqB18L8+1r4v032E=", "controller"=>"sessions"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'example@railstutorial.org') LIMIT 1[0m
+  [4;36;1mUser Update (15.6ms)[0m   [0;1mUPDATE "users" SET "updated_at" = '2011-07-07 10:21:34.103970', "remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/users
+Completed in 47ms (DB: 16) | 302 Found [http://localhost/sessions]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 15:51:34) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523') LIMIT 1[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (125.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 375ms (View: 344, DB: 0) | 200 OK [http://localhost/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET standard_conforming_strings = on[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2011-07-07 15:51:38) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523') LIMIT 1[0m
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 63ms (View: 31, DB: 0) | 200 OK [http://localhost/users/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2011-07-07 16:15:49) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523') LIMIT 1[0m
+Rendered layouts/_header (31.3ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 16:15:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (15.6ms)
+Completed in 328ms (View: 297, DB: 0) | 200 OK [http://localhost/users]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET standard_conforming_strings = on[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2011-07-07 16:18:42) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'b0c33c79ce7a66c2dd59306fed75241f00c1a56113a04f262df8f2f47e5f4523') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 30 OFFSET 0[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "users" [0m
+Rendering template within layouts/application
+Rendering users/index
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered users/_user (0.0ms)
+Rendered users/_user (15.6ms)
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (15.6ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 500ms (View: 453, DB: 0) | 200 OK [http://localhost/users]

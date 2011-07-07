@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110707084400) do
+ActiveRecord::Schema.define(:version => 20110707101312) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110707084400) do
     t.string   "encrypted_password"
     t.string   "salt"
     t.string   "remember_token"
+    t.boolean  "admin"
   end
 
 end
